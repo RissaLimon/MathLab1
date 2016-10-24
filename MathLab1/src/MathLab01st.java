@@ -80,8 +80,8 @@ public class MathLab01st
 		System.out.println("=====================================================");
 		System.out.println("Cube Surface Area:                " + Geometry.cubeSurfaceArea(side));
 		System.out.println("Square Prism Surface Area:        " + Geometry.squarePrismSurfaceArea(side,height));
-//		System.out.println("Rectangular Prism Surface Area:   " + Geometry.rectangularPrismSurfaceArea(length,width,height));
-//		System.out.println("Sphere Surface Area:              " + Geometry.sphereSurfaceArea(radius));
+		System.out.println("Rectangular Prism Surface Area:   " + Geometry.rectangularPrismSurfaceArea(length,width,height));
+		System.out.println("Sphere Surface Area:              " + Geometry.sphereSurfaceArea(radius));
 		System.out.println("\n");
 	}
 	
@@ -90,7 +90,7 @@ public class MathLab01st
 		System.out.println("Volumes of 3D Shapes");
 		System.out.println("=====================================================");
 		System.out.println("Cube Volume:                      " + Geometry.cubeVolume(side));
-//		System.out.println("Square Prism Volume:              " + Geometry.squarePrismVolume(side,height));
+		System.out.println("Square Prism Volume:              " + Geometry.squarePrismVolume(side,height));
 //		System.out.println("Rectangular Prism Volume:         " + Geometry.rectangularPrismVolume(length,width,height));
 //		System.out.println("Pyramid Volume:                   " + Geometry.pyramidVolume(side,height));
 //		System.out.println("Cylinder Volume:                  " + Geometry.cylinderVolume(radius,height));
@@ -111,17 +111,17 @@ class Geometry
 	
 	public static double pentagonPerimeter (double s)
 	{
-		return 5*s;
+		return 5 * s;
 	}
 	
 	public static double hexagonPerimeter (double s)
 	{
-		return 6*s;
+		return 6 * s;
 	}
 	
 	public static double octagonPerimeter (double s)
 	{
-		return 8*s;
+		return 8 * s;
 	}
 	
 	public static double rectanglePerimeter (double l, double w)
@@ -161,9 +161,9 @@ class Geometry
 	{
 		return (b1 + b2) * h;
 	}
-	public static double circleArea (double p, double r)
+	public static double circleArea (double r)
 	{
-		return math.pi * r
+		return Math.PI * (r * r);
 	}
 	
 
@@ -178,8 +178,11 @@ class Geometry
 	{
 		return 2 * s + 4 * s * h;
 	}
-	
-	
+	public static double rectangularPrismSurfaceArea (double l, double w, double h)
+	{
+		return  2 * l * w + 2 * l * h + 2 * w * h;
+	}
+
 	
 	
 	
@@ -189,7 +192,6 @@ class Geometry
 	{ 
 	    return s * s * s; 
 	}
-	
 	
 	
 	
