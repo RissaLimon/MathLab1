@@ -91,113 +91,143 @@ public class MathLab01st
 		System.out.println("=====================================================");
 		System.out.println("Cube Volume:                      " + Geometry.cubeVolume(side));
 		System.out.println("Square Prism Volume:              " + Geometry.squarePrismVolume(side,height));
-//		System.out.println("Rectangular Prism Volume:         " + Geometry.rectangularPrismVolume(length,width,height));
-//		System.out.println("Pyramid Volume:                   " + Geometry.pyramidVolume(side,height));
-//		System.out.println("Cylinder Volume:                  " + Geometry.cylinderVolume(radius,height));
-//		System.out.println("Cone Volume:                      " + Geometry.coneVolume(radius,height));
-//		System.out.println("Sphere Volume:                    " + Geometry.sphereVolume(radius));
+		System.out.println("Rectangular Prism Volume:         " + Geometry.rectangularPrismVolume(length,width,height));
+		System.out.println("Pyramid Volume:                   " + Geometry.pyramidVolume(side,height));
+		System.out.println("Cylinder Volume:                  " + Geometry.cylinderVolume(radius,height));
+		System.out.println("Cone Volume:                      " + Geometry.coneVolume(radius,height));
+		System.out.println("Sphere Volume:                    " + Geometry.sphereVolume(radius));
 		System.out.println("\n");		
 	}
 }
 
 
-class Geometry
-{
-    // 2D Perimeters
-	public static double squarePerimeter (double s)                      
-	{ 
-	    return 4 * s; 
-	}
-	
-	public static double pentagonPerimeter (double s)
-	{
-		return 5 * s;
-	}
-	
-	public static double hexagonPerimeter (double s)
-	{
-		return 6 * s;
-	}
-	
-	public static double octagonPerimeter (double s)
-	{
-		return 8 * s;
-	}
-	
-	public static double rectanglePerimeter (double l, double w)
-	{
-	return (l + w) * 2;
-	}
-	
-	public static double circumference (double r)
-	{
-		return 2*Math.PI*r;
-	}
-
-		
-	// 2D Areas
-	public static double squareArea (double s)             
-	{ 
-	    return s * s; 
-	}
-	public static double rectangleArea (double l, double w)
-	{
-		return l * w;
-	}
-	public static double parallelogramArea (double b, double h)
-	{
-		return b * h;
-	}
-	public static double triangleArea (double b, double h)
-	{
-		return b * h/2;
-	}
-	
-	public static double trapezoidArea (double b1, double b2, double h)
-	{
-		return (b1 + b2)/2 *h;
-	}
-	public static double hexagonArea (double b1, double b2, double h)
-	{
-		return (b1 + b2) * h;
-	}
-	public static double circleArea (double r)
-	{
-		return Math.PI * (r * r);
-	}
-	
-
-
-
-    // 3D Surface Areas
-	public static double cubeSurfaceArea (double s)                      
-	{ 
-	    return 6 * s * s; 
-	}
-	public static double squarePrismSurfaceArea (double s, double h)
-	{
-		return 2 * s + 4 * s * h;
-	}
-	public static double rectangularPrismSurfaceArea (double l, double w, double h)
-	{
-		return  2 * l * w + 2 * l * h + 2 * w * h;
-	}
-
-	
-	
-	
-	
-	// 3D Volumes
-	public static double cubeVolume (double s)             
-	{ 
-	    return s * s * s; 
-	}
-	
-	
-	
-
-	
-}
-
-	
+//class Geometry
+//{
+//    // 2D Perimeters
+//	public static double squarePerimeter (double s)                      
+//	{ 
+//	    return 4 * s; 
+//	}
+//	
+//	public static double pentagonPerimeter (double s)
+//	{
+//		return 5 * s;
+//	}
+//	
+//	public static double hexagonPerimeter (double s)
+//	{
+//		return 6 * s;
+//	}
+//	
+//	public static double octagonPerimeter (double s)
+//	{
+//		return 8 * s;
+//	}
+//	
+//	public static double rectanglePerimeter (double l, double w)
+//	{
+//	return (l + w) * 2;
+//	}
+//	
+//	public static double circumference (double r)
+//	{
+//		return 2*Math.PI*r;
+//	}
+//	
+//
+//		
+//	// 2D Areas
+//	public static double squareArea (double s)             
+//	{ 
+//	    return s * s; 
+//	}
+//	public static double rectangleArea (double l, double w)
+//	{
+//		return l * w;
+//	}
+//	public static double parallelogramArea (double b, double h)
+//	{
+//		return b * h;
+//	}
+//	public static double triangleArea (double b, double h)
+//	{
+//		return b * h/2;
+//	}
+//	
+//	public static double trapezoidArea (double b1, double b2, double h)
+//	{
+//		return (b1 + b2)/2 *h;
+//	}
+//	public static double hexagonArea (double b1, double b2, double h)
+//	{
+//		return (b1 + b2) * h;
+//	}
+//	public static double circleArea (double r)
+//	{
+//		return Math.PI * (r * r);
+//	}
+//	
+//
+//
+//
+//    // 3D Surface Areas
+//	public static double cubeSurfaceArea (double s)                      
+//	{ 
+//	    return 6 * s * s; 
+//	}
+//	public static double squarePrismSurfaceArea (double s, double h)
+//	{
+//		return 2 * s + 4 * s * h;
+//	}
+//	public static double rectangularPrismSurfaceArea (double l, double w, double h)
+//	{
+//		return  2 * l * w + 2 * l * h + 2 * w * h;
+//	}
+//	
+//	public static double sphereSurfaceArea (double r)
+//	{
+//		 return 4 * Math.PI * r * r ;
+//	}
+//	
+//	
+//	
+//	
+//	// 3D Volumes
+//	public static double cubeVolume (double s)             
+//	{ 
+//	    return s * s * s; 
+//	}
+//	
+//	public static double squarePrismVolume (double s, double  h)             
+//	{ 
+//	    return (s * s) * h ; 
+//	} 
+//	
+//	public static double rectangularPrismVolume (double l, double w, double h)             
+//	{ 
+//	    return l * w * h ; 
+//	} 
+//
+//	public static double pyramidVolume (double s, double h)             
+//	{ 
+//	    return s * s * h / 3 ; 
+//	} 
+//	
+//	public static double cylinderVolume (double r, double h)             
+//	{ 
+//	    return Math.PI * r * r * h ; 
+//	} 
+//	
+//	public static double coneVolume (double r, double h)             
+//	{ 
+//	    return Math.PI * r * r * h / 3 ; 
+//	}
+//	
+//	public static double sphereVolume (double r)             
+//	{ 
+//	    return (4 * Math.PI * r * r * r) / 3 ; 
+//	}
+//}
+//
+//	
 	
